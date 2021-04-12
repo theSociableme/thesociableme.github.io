@@ -28,7 +28,7 @@ const Farms: React.FC = () => {
 							<PageHeader
 								icon={quicBanner}
 								subtitle="Earn QUIC tokens by staking Sushiswap and Uniswap LP tokens. And soon generate synthetic assets!"
-								title="Select Your Fav Dim Sum Entrees!"
+								title="Your Favorite High APY Farms!"
 							/>
 							<FarmCards />
 						</Route>

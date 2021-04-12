@@ -4,14 +4,14 @@ import { BigNumber } from 'bignumber.js'
 import { useWallet } from 'use-wallet'
 
 import { getStaked, getMasterChefContract } from '../quic/utils'
-import useBao from './useQuic'
+import useQuic from './useQuic'
 import useBlock from './useBlock'
 import { ethers } from 'ethers'
 
 const useStakedBalance = (pid: number) => {
   const [balance, setBalance] = useState(new BigNumber(0))
   const { account }: { account: string } = useWallet()
-  const quic = useBao()
+  const quic = useQuic()
   const masterChefContract = getMasterChefContract(quic)
   const block = useBlock()
   let userBalance

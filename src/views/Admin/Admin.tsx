@@ -21,12 +21,14 @@ import useRunSetup from '../../hooks/useRunSetup'
 import useMint from '../../hooks/useMint'
 import useCapUpdate from '../../hooks/useCapUpdate'
 import useAddPair from '../../hooks/useAddPair'
+import useSetPair from '../../hooks/useSetPair'
 import useAddAuthorized from '../../hooks/useAddAuthorized'
 import useTransferOwnership from '../../hooks/useTransferOwnership'
 
 import MintModal from './components/MintModal'
 import CapUpdateModal from './components/CapUpdateModal'
 import AddPairModal from './components/AddPairModal'
+import SetPairModal from './components/SetPairModal'
 import AddAuthorizedModal from './components/AddAuthorizedModal'
 import TransferOwnershipModal from './components/TransferOwnershipModal'
 
@@ -45,6 +47,7 @@ const Admin: React.FC = () => {
 	const { onMint } = useMint()
 	const { onCapUpdate } = useCapUpdate()
 	const { onAddPair } = useAddPair()
+	const { onSetPair } = useSetPair()
 	const { onAddAuthorized } = useAddAuthorized()
 	const { onTransferOwnership } = useTransferOwnership()
 
@@ -63,6 +66,12 @@ const Admin: React.FC = () => {
 	const [onPresentAddPair] = useModal(
 		<AddPairModal
 			onConfirm={onAddPair}
+		/>,
+	)
+
+	const [onPresentSetPair] = useModal(
+		<SetPairModal
+			onConfirm={onSetPair}
 		/>,
 	)
 
@@ -168,6 +177,9 @@ const Admin: React.FC = () => {
 								<Button 
 									text="Add Pair"
 									onClick={onPresentAddPair}/>	
+								<Button 
+									text="Update Pair"
+									onClick={onPresentSetPair}/>		
 								<Button 
 									text="Add Authorized"
 									onClick={onPresentAddAuthorized}/>	

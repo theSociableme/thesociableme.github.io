@@ -13,6 +13,7 @@ import {
 import useLockedEarnings from './useLockedEarnings'
 import useQuic from './useQuic'
 import useBlock from './useBlock'
+import { Console } from 'node:console'
 
 const useValues = () => {
   const { account }: { account: string } = useWallet()
@@ -25,7 +26,7 @@ const useValues = () => {
   const [wethPrices, setWethPrices] = useState(new BigNumber(0))
 
   const getInfo = useCallback(async () => {
-    console.log(quic)
+    console.log("useValues getInfo")
     if (quic) {
       const wethPriceFun = getWethPrice(quic).then((response) => {
         setWethPrices(response)

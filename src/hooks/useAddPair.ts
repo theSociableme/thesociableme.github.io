@@ -13,9 +13,10 @@ const useAddPair = () => {
 
 
   const handleAddPair = useCallback(
-    async (weight: string, lpAddress: string) => {
-      console.log("Adding " + lpAddress + " with weight:" + weight)  
-      const txHash = await addPair(masterChefContract, account, new BigNumber(parseInt(weight)), lpAddress)
+    async (weight: string, lpAddress: string, updatePools: string) => {
+      let boolUpdatePools = updatePools === 'true'
+      console.log("Adding " + lpAddress + " with weight:" + weight + " updatepools to " + boolUpdatePools)  
+      const txHash = await addPair(masterChefContract, account, new BigNumber(parseInt(weight)), lpAddress, boolUpdatePools)
       console.log(txHash)
       return txHash
     }, [masterChefContract])

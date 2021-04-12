@@ -17,8 +17,8 @@ import useBlock from './useBlock'
 const useSubValues = () => {
   const { account }: { account: string } = useWallet()
   const quic = useQuic()
-  //const wethPriceContract = getWethPriceContract(quic)
-  //const quicPriceContract = getQuicPriceContract(quic)
+  const wethPriceContract = getWethPriceContract(quic)
+  const quicPriceContract = getQuicPriceContract(quic)
   const locks = useLockedEarnings()
   const [usrSubText, setUsrSubText] = useState(new String())
   const [quicPrices, setQuicPrices] = useState(new BigNumber(0))
@@ -47,7 +47,7 @@ const useSubValues = () => {
           const usrSubText =
             'When this unlocks it will earn you $' +
             dailyPrice +
-            ' per day for 3 years. The equivalent of $' +
+            ' per day for 2 years. The equivalent of $' +
             annualPrice +
             ' per year!'
           setUsrSubText(usrSubText)

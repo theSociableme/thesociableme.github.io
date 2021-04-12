@@ -10,13 +10,14 @@ import Input, { InputProps } from '../../../components/Input'
 
 
 interface AddPairModalProps extends ModalProps {
-	onConfirm: (weight: string, lpAddress: string) => void
+	onConfirm: (weight: string, lpAddress: string, updatePools: string) => void
 }
 
 const AddPairModal: React.FC<AddPairModalProps> = ({
 	onConfirm,
 	onDismiss,
 }) => {
+	const [updatePools, setUpdatePools] = useState('')
 	const [weight, setWeight] = useState('')
 	const [lpAddress, setLpAddress] = useState('')
 	const [pendingTx, setPendingTx] = useState(false)
@@ -33,6 +34,13 @@ const AddPairModal: React.FC<AddPairModalProps> = ({
 			setLpAddress(e.currentTarget.value)
 		},
 		[setLpAddress],
+	)
+
+	const handleUpdatePoolsChange = useCallback(
+		(e: React.FormEvent<HTMLInputElement>) => {
+			setUpdatePools(e.currentTarget.value)
+		},
+		[setUpdatePools],
 	)
 
 	return (
@@ -58,6 +66,16 @@ const AddPairModal: React.FC<AddPairModalProps> = ({
 				}
 				onChange={handleAddressChange}
 				value={lpAddress}/>
+			<Input 
+				endAdornment={
+					<StyledTokenAdornmentWrapper>
+						<StyledTokenSymbol>Update Pools </StyledTokenSymbol>
+						<StyledSpacer />
+		
+					</StyledTokenAdornmentWrapper>
+				}
+				onChange={handleUpdatePoolsChange}
+				value={updatePools}/>
 			<ModalActions>
 				<Button text="Cancel" variant="secondary" onClick={onDismiss} />
 				<Button
@@ -65,7 +83,7 @@ const AddPairModal: React.FC<AddPairModalProps> = ({
 					text={pendingTx ? 'Pending Confirmation' : 'Confirm'}
 					onClick={async () => {
 						setPendingTx(true)
-						await onConfirm(weight, lpAddress)
+						await onConfirm(weight, lpAddress, updatePools)
 						setPendingTx(false)
 						onDismiss()
 					}}

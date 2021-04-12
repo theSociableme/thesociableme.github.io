@@ -268,9 +268,11 @@ export const contractAddresses = {
 	},
 	quicPrice: {
 
-		4: '0x649AfCf002742cf93CbE1F8C3832FD05ACA2D8ea',
+		4: '0x2F31cabcFc3687044261B3F15b0e6F6b45504795',
 	},
 }
+
+// UniswapV@Factory Address Rinkeby 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f
 //
 /*
 BAO Address on mainnet for reference
@@ -300,13 +302,30 @@ export const supportedPools = [
 			4: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E'
 		},
 		tokenDecimals: 18,
-		name: 'Quic Party',
+		name: 'Quic / ETH',
 		symbol: 'QUIC-ETH UNIV2',
 		tokenSymbol: 'QUIC',
-		icon: '/quic-banner.png',
+		icon: '/quic-logo.png',
 		refUrl:
 			'https://1inch.exchange/#/r/0x3bC3c8aF8CFe3dFC9bA1A57c7C3b653e3f6d6951/ETH/BAO',
-	}
+	},
+	{
+		pid: 1,
+		lpAddresses: {
+			4: '0x69215607dd51578052ffe2b4df3bc5c2e4878c16'
+		},
+		tokenAddresses: {
+			4: '0x8967BCF84170c91B0d24D4302C2376283b0B3a07'
+		},
+		tokenDecimals: 18,
+		name: 'Ocean / ETH',
+		symbol: 'OCEAN-ETH UNIV2',
+		tokenSymbol: 'OCEAN',
+		icon: '/orange-chicken.png',
+		refUrl:
+			'',
+	},
+	
 ]
 export const baoPools =[
 	{

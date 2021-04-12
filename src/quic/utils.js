@@ -202,13 +202,16 @@ export const getStaked = async (masterChefContract, pid, account) => {
 }
 
 export const getWethPrice = async (quic) => {
-	console.log(quic)
+	console.log("utils.js getWethPrice")
 	const amount = await quic.contracts.wethPrice.methods.latestAnswer().call()
+	console.log("Got Weth price " + amount)
 	return new BigNumber(amount)
 }
 
 export const getQuicPrice = async (quic) => {
-	const addr = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+	const addr = quic.quicAddress
+	console.log("utils.js getQuicPrice")
+
 	const amount = await quic.contracts.quicPrice.methods
 		.consult(addr.toString(), 1)
 		.call()
@@ -257,8 +260,16 @@ export const runSetup = async (masterChefContract, account) => {
 	})
 }
 
-export const addPair = async (masterChefContract, account, weight, lpAddress) => {
+export const addPair = async (masterChefContract, account, weight, lpAddress, updatePools) => {
 	return await masterChefContract.methods.add(weight, lpAddress, false).send({ from: account })
+	.on('transactionHash', (tx) => {
+		console.log(tx)
+		return tx.transactionHash
+	})
+}
+
+export const setPair = async (masterChefContract, account, pid, weight, updatePools) => {
+	return await masterChefContract.methods.set(pid, weight, updatePools).send({ from: account })
 	.on('transactionHash', (tx) => {
 		console.log(tx)
 		return tx.transactionHash
