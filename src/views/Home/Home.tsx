@@ -25,7 +25,7 @@ const Home: React.FC = () => {
 			</StyledInfo>
 			<Spacer size="md" />
 			<StyledInfo>
-				Please note this is the mainnet version of Quic Finance
+				Please note this is the RINKEBY version of Quic Finance
 			</StyledInfo>
 			<Spacer size="md" />
 			<Container>
