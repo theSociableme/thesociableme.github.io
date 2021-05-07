@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
 			>
 				SushiSwap QUIC-ETH
 			</StyledLink>
-			<StyledLink target="_blank" href="https://discord.gg/c43ntTqE">
+			<StyledLink target="_blank" href="https://discord.gg/RyeUuBma">
 				Discord
 			</StyledLink>
 			<StyledLink target="_blank" href="https://twitter.com/quicfinance">
