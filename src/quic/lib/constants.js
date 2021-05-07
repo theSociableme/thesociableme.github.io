@@ -246,17 +246,17 @@ export const addressMap = {
 	LDO: '0x5a98fcbea516cf06857215779fd812ca3bef1b32',
 	BOR: '0x3c9d6c1c73b31c837832c72e04d3152f051fc1a9',
 	'1Inch': '0x111111111117dc0aa78b770fa6a738034120c302',
-	QUIC: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E'
+	QUIC: '0x6139a60CbB4fbC729060CC44E193C489FE27246a'
 }
 
 export const contractAddresses = {
 	quic: {
 		1: '',
-		4: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E',
+		4: '0x6139a60CbB4fbC729060CC44E193C489FE27246a',
 	},
 	masterChef: {
 		1: '',
-		4: '0xaE56ed15ffb71B5490C21F408B7Cb48306495d20',
+		4: '0xcEe47f5f03D3975Ac51A80792Db7fE834D269Bf6',
 	},
 	weth: {
 
@@ -293,38 +293,38 @@ BAO Address on mainnet for reference
 */
 
 export const supportedPools = [
-	{
-		pid: 0,
-		lpAddresses: {
-			4: '0x86e25610f7c29c154e94902faeed1e9fca8d10c0'
-		},
-		tokenAddresses: {
-			4: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E'
-		},
-		tokenDecimals: 18,
-		name: 'Quic / ETH',
-		symbol: 'QUIC-ETH UNIV2',
-		tokenSymbol: 'QUIC',
-		icon: '/quic-logo.png',
-		refUrl:
-			'https://1inch.exchange/#/r/0x3bC3c8aF8CFe3dFC9bA1A57c7C3b653e3f6d6951/ETH/BAO',
-	},
-	{
-		pid: 1,
-		lpAddresses: {
-			4: '0x69215607dd51578052ffe2b4df3bc5c2e4878c16'
-		},
-		tokenAddresses: {
-			4: '0x8967BCF84170c91B0d24D4302C2376283b0B3a07'
-		},
-		tokenDecimals: 18,
-		name: 'Ocean / ETH',
-		symbol: 'OCEAN-ETH UNIV2',
-		tokenSymbol: 'OCEAN',
-		icon: '/orange-chicken.png',
-		refUrl:
-			'',
-	},
+	// {
+	// 	pid: 0,
+	// 	lpAddresses: {
+	// 		4: '0x86e25610f7c29c154e94902faeed1e9fca8d10c0'
+	// 	},
+	// 	tokenAddresses: {
+	// 		4: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E'
+	// 	},
+	// 	tokenDecimals: 18,
+	// 	name: 'Quic / ETH',
+	// 	symbol: 'QUIC-ETH UNIV2',
+	// 	tokenSymbol: 'QUIC',
+	// 	icon: '/quic-logo.png',
+	// 	refUrl:
+	// 		'https://1inch.exchange/#/r/0x3bC3c8aF8CFe3dFC9bA1A57c7C3b653e3f6d6951/ETH/BAO',
+	// },
+	// {
+	// 	pid: 1,
+	// 	lpAddresses: {
+	// 		4: '0x69215607dd51578052ffe2b4df3bc5c2e4878c16'
+	// 	},
+	// 	tokenAddresses: {
+	// 		4: '0x8967BCF84170c91B0d24D4302C2376283b0B3a07'
+	// 	},
+	// 	tokenDecimals: 18,
+	// 	name: 'Ocean / ETH',
+	// 	symbol: 'OCEAN-ETH UNIV2',
+	// 	tokenSymbol: 'OCEAN',
+	// 	icon: '/orange-chicken.png',
+	// 	refUrl:
+	// 		'',
+	// },
 	
 ]
 export const baoPools =[
