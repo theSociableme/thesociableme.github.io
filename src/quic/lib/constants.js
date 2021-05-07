@@ -293,38 +293,38 @@ BAO Address on mainnet for reference
 */
 
 export const supportedPools = [
-	// {
-	// 	pid: 0,
-	// 	lpAddresses: {
-	// 		4: '0x86e25610f7c29c154e94902faeed1e9fca8d10c0'
-	// 	},
-	// 	tokenAddresses: {
-	// 		4: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E'
-	// 	},
-	// 	tokenDecimals: 18,
-	// 	name: 'Quic / ETH',
-	// 	symbol: 'QUIC-ETH UNIV2',
-	// 	tokenSymbol: 'QUIC',
-	// 	icon: '/quic-logo.png',
-	// 	refUrl:
-	// 		'https://1inch.exchange/#/r/0x3bC3c8aF8CFe3dFC9bA1A57c7C3b653e3f6d6951/ETH/BAO',
-	// },
-	// {
-	// 	pid: 1,
-	// 	lpAddresses: {
-	// 		4: '0x69215607dd51578052ffe2b4df3bc5c2e4878c16'
-	// 	},
-	// 	tokenAddresses: {
-	// 		4: '0x8967BCF84170c91B0d24D4302C2376283b0B3a07'
-	// 	},
-	// 	tokenDecimals: 18,
-	// 	name: 'Ocean / ETH',
-	// 	symbol: 'OCEAN-ETH UNIV2',
-	// 	tokenSymbol: 'OCEAN',
-	// 	icon: '/orange-chicken.png',
-	// 	refUrl:
-	// 		'',
-	// },
+	{
+		pid: 0,
+		lpAddresses: {
+			4: '0x86e25610f7c29c154e94902faeed1e9fca8d10c0'
+		},
+		tokenAddresses: {
+			4: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E'
+		},
+		tokenDecimals: 18,
+		name: 'Quic / ETH',
+		symbol: 'QUIC-ETH UNIV2',
+		tokenSymbol: 'QUIC',
+		icon: '/quic-logo.png',
+		refUrl:
+			'https://1inch.exchange/#/r/0x3bC3c8aF8CFe3dFC9bA1A57c7C3b653e3f6d6951/ETH/BAO',
+	},
+	{
+		pid: 1,
+		lpAddresses: {
+			4: '0x69215607dd51578052ffe2b4df3bc5c2e4878c16'
+		},
+		tokenAddresses: {
+			4: '0x8967BCF84170c91B0d24D4302C2376283b0B3a07'
+		},
+		tokenDecimals: 18,
+		name: 'Ocean / ETH',
+		symbol: 'OCEAN-ETH UNIV2',
+		tokenSymbol: 'OCEAN',
+		icon: '/orange-chicken.png',
+		refUrl:
+			'',
+	},
 	
 ]
 export const baoPools =[
