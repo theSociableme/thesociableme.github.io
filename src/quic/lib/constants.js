@@ -296,10 +296,10 @@ export const supportedPools = [
 	{
 		pid: 0,
 		lpAddresses: {
-			4: '0x86e25610f7c29c154e94902faeed1e9fca8d10c0'
+			4: '0xb99876AC349f77C2A4bb3DA0b3A0cE854bd0d434'
 		},
 		tokenAddresses: {
-			4: '0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E'
+			4: '0xCE67DA1f65f62c0a2AF0C97CE396bE82F3a4dDCa'
 		},
 		tokenDecimals: 18,
 		name: 'Quic / ETH',
@@ -307,7 +307,7 @@ export const supportedPools = [
 		tokenSymbol: 'QUIC',
 		icon: '/quic-logo.png',
 		refUrl:
-			'https://1inch.exchange/#/r/0x3bC3c8aF8CFe3dFC9bA1A57c7C3b653e3f6d6951/ETH/BAO',
+			'',
 	},
 	{
 		pid: 1,
