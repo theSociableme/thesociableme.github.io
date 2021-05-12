@@ -246,17 +246,17 @@ export const addressMap = {
 	LDO: '0x5a98fcbea516cf06857215779fd812ca3bef1b32',
 	BOR: '0x3c9d6c1c73b31c837832c72e04d3152f051fc1a9',
 	'1Inch': '0x111111111117dc0aa78b770fa6a738034120c302',
-	QUIC: '0xCE67DA1f65f62c0a2AF0C97CE396bE82F3a4dDCa'
+	QUIC: '0x226Cae4b9A2a068cE593Da8D784CBE3C89254B77'
 }
 
 export const contractAddresses = {
 	quic: {
 		1: '',
-		4: '0xCE67DA1f65f62c0a2AF0C97CE396bE82F3a4dDCa',
+		4: '0x226Cae4b9A2a068cE593Da8D784CBE3C89254B77',
 	},
 	masterChef: {
 		1: '',
-		4: '0xcEEf5C19F30f6639d4CeBe6285eEd186dE15149F',
+		4: '0x38D99968b98E63500d0CE94545c4C8e50e097653',
 	},
 	weth: {
 
@@ -296,7 +296,7 @@ export const supportedPools = [
 	{
 		pid: 0,
 		lpAddresses: {
-			4: '0xb99876AC349f77C2A4bb3DA0b3A0cE854bd0d434'
+			4: '0x9f8e49d5fd3b5714611f87eee7141c5da3747938'
 		},
 		tokenAddresses: {
 			4: '0xCE67DA1f65f62c0a2AF0C97CE396bE82F3a4dDCa'

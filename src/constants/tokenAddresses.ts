@@ -8,9 +8,9 @@
 
 
 
-export const quic = '0xCE67DA1f65f62c0a2AF0C97CE396bE82F3a4dDCa'
-export const quicv2 = '0xCE67DA1f65f62c0a2AF0C97CE396bE82F3a4dDCa'
-export const quicAddress = '0xCE67DA1f65f62c0a2AF0C97CE396bE82F3a4dDCa'
-export const masterChefAddress = '0xcEEf5C19F30f6639d4CeBe6285eEd186dE15149F'
+export const quic = '0x226Cae4b9A2a068cE593Da8D784CBE3C89254B77'
+export const quicv2 = '0x226Cae4b9A2a068cE593Da8D784CBE3C89254B77'
+export const quicAddress = '0x226Cae4b9A2a068cE593Da8D784CBE3C89254B77'
+export const masterChefAddress = '0x38D99968b98E63500d0CE94545c4C8e50e097653'
 export const wethPriceAddress = '0x8A753747A1Fa494EC906cE90E9f37563A8AF630e'  //rinkeby
 export const quicPriceAddress = '0x2F31cabcFc3687044261B3F15b0e6F6b45504795'  // rinkeby
