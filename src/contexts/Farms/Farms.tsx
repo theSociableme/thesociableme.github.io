@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 
 import { useWallet } from 'use-wallet'
-import useBao from '../../hooks/useQuic'
+import useQuic from '../../hooks/useQuic'
 
 import { bnToDec } from '../../utils'
 import { getMasterChefContract, getEarned } from '../../quic/utils'
@@ -13,10 +13,10 @@ import { Farm } from './types'
 const Farms: React.FC = ({ children }) => {
 	const [unharvested, setUnharvested] = useState(0)
 
-	const bao = useBao()
+	const quic = useQuic()
 	const { account } = useWallet()
 
-	const farms = getFarms(bao)
+	const farms = getFarms(quic)
 
 	return (
 		<Context.Provider

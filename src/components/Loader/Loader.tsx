@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 import CardIcon from '../CardIcon'
+import QuicIcon from '../QuicIcon'
 
 interface LoaderProps {
 	text?: string
@@ -11,7 +12,7 @@ const Loader: React.FC<LoaderProps> = ({ text }) => {
 	return (
 		<StyledLoader>
 			<CardIcon>
-				<StyledBao>🥟</StyledBao>
+				<StyledBao><QuicIcon></QuicIcon></StyledBao>
 			</CardIcon>
 			{!!text && <StyledText>{text}</StyledText>}
 		</StyledLoader>

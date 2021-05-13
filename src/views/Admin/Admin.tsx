@@ -20,6 +20,7 @@ import useQuic from '../../hooks/useQuic'
 import useRunSetup from '../../hooks/useRunSetup'
 import useMint from '../../hooks/useMint'
 import useCapUpdate from '../../hooks/useCapUpdate'
+import useRewardUpdate from '../../hooks/useRewardUpdate'
 import useAddPair from '../../hooks/useAddPair'
 import useSetPair from '../../hooks/useSetPair'
 import useAddAuthorized from '../../hooks/useAddAuthorized'
@@ -27,6 +28,7 @@ import useTransferOwnership from '../../hooks/useTransferOwnership'
 
 import MintModal from './components/MintModal'
 import CapUpdateModal from './components/CapUpdateModal'
+import RewardUpdateModal from './components/RewardUpdateModal'
 import AddPairModal from './components/AddPairModal'
 import SetPairModal from './components/SetPairModal'
 import AddAuthorizedModal from './components/AddAuthorizedModal'
@@ -46,6 +48,7 @@ const Admin: React.FC = () => {
     const { onRunSetup } = useRunSetup()
 	const { onMint } = useMint()
 	const { onCapUpdate } = useCapUpdate()
+	const { onRewardUpdate } = useRewardUpdate()
 	const { onAddPair } = useAddPair()
 	const { onSetPair } = useSetPair()
 	const { onAddAuthorized } = useAddAuthorized()
@@ -60,6 +63,12 @@ const Admin: React.FC = () => {
 	const [onPresentCapUpdate] = useModal(
 		<CapUpdateModal
 			onConfirm={onCapUpdate}
+		/>,
+	)
+
+	const [onPresentRewardUpdate] = useModal(
+		<RewardUpdateModal
+			onConfirm={onRewardUpdate}
 		/>,
 	)
 
@@ -166,20 +175,26 @@ const Admin: React.FC = () => {
                                                     }}
                                                     />
 
-                                <StyledActionSpacer />
+                                
 								<Button 
 									text="Mint"
 									onClick={onPresentMint}/>
-								<StyledActionSpacer />
+								<br/>
+								<Spacer size="lg" />
 								<Button 
 									text="Update Cap"
 									onClick={onPresentCapUpdate}/>
+								<Button 
+									text="Update Reward"
+									onClick={onPresentRewardUpdate}/>
+											<Spacer size="lg" />
 								<Button 
 									text="Add Pair"
 									onClick={onPresentAddPair}/>	
 								<Button 
 									text="Update Pair"
-									onClick={onPresentSetPair}/>		
+									onClick={onPresentSetPair}/>	
+											<Spacer size="lg" />	
 								<Button 
 									text="Add Authorized"
 									onClick={onPresentAddAuthorized}/>	
@@ -208,6 +223,18 @@ const Admin: React.FC = () => {
 
 	)
 }
+const StyledInfo = styled.h3`
+	color: ${(props) => props.theme.color.grey[500]};
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	> b {
+		color: ${(props) => props.theme.color.grey[600]};
+	}
+`
 
 const Footnote = styled.div`
 	font-size: 14px;

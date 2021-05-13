@@ -26,9 +26,10 @@ const QuicProvider: React.FC = ({ children }) => {
 	window.quic = quic
 
 	useEffect(() => {
+		console.log('QuicProvider::useEffect')
 		if (ethereum) {
 			const chainId = Number(ethereum.chainId)
-			console.log(chainId)
+			console.log('chainId ' + chainId)
 			const quicLib = new Quic(ethereum, chainId, false, {
 				defaultAccount: ethereum.selectedAddress,
 				defaultConfirmations: 1,

@@ -64,7 +64,7 @@ const DepositModal: React.FC<DepositModalProps> = ({
 			</ModalActions>
 			<ModalContent>
 				{
-					"Remember a 0.75% fee will be added to the treasury when depositing but you'll earn the APY to offset it."
+					"Remember a 0.5% fee will be added to the treasury when depositing but you'll earn the APY to offset it."
 				}
 			</ModalContent>
 		</Modal>

@@ -26,7 +26,7 @@ const Nav: React.FC = () => {
 				Farms
 			</StyledLink>
 			<StyledAbsoluteLink
-				href="https://snapshot.page/#/baovotes.eth"
+				href="https://snapshot.page/#/quicvotes.eth"
 				target="_blank"
 			>
 				Vote

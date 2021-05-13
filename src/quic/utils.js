@@ -276,6 +276,14 @@ export const setPair = async (masterChefContract, account, pid, weight, updatePo
 	})
 }
 
+export const rewardUpdate = async (masterChefContract, account, amount) => {
+	return await masterChefContract.methods.rewardUpdate(amount).send({ from: account })
+	.on('transactionHash', (tx) => {
+		console.log(tx)
+		return tx.transactionHash
+	})
+}
+
 export const addAuthorized = async (masterChefContract, quic, account, authorizedAddress) => {
 	await quic.methods.addAuthorized(authorizedAddress).send({ from: account })
 	.on('transactionHash', (tx) => {

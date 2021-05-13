@@ -6,13 +6,13 @@ const Nav: React.FC = () => {
 		<StyledNav>
 			<StyledLink
 				target="_blank"
-				href="https://etherscan.io/address/0xBD530a1c060DC600b951f16dc656E4EA451d1A2D"
+				href="https://etherscan.io/address/0xE45d54719209301Dc0C788c5B81392F11263dFFB"
 			>
 				QuicChef Contract
 			</StyledLink>
 			<StyledLink
 				target="_blank"
-				href="https://app.uniswap.org/#/swap?inputCurrency=0x6139a60CbB4fbC729060CC44E193C489FE27246a&outputCurrency=ETH"
+				href="https://app.uniswap.org/#/swap?inputCurrency=0x9DD92DEdc403bC47Ae997FFa90bD18Fc47B6a57E&outputCurrency=ETH"
 			>
 				Uniswap QUIC-ETH
 			</StyledLink>
@@ -28,7 +28,7 @@ const Nav: React.FC = () => {
 			<StyledLink target="_blank" href="https://twitter.com/quicfinance">
 				Twitter
 			</StyledLink>
-			<StyledLink target="_blank" href="https://quicfinance.medium.com/">
+			<StyledLink target="_blank" href="https://medium.com/@quicfinance">
 				Medium
 			</StyledLink>
 		</StyledNav>

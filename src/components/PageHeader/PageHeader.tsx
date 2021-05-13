@@ -34,8 +34,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
 					<StyledSubtitle>
 						<br />
 						<br />
-						Tip: Using the "Buy" button will take you to exchanges via the Bao
-						affiliate links. 100% of the revenue from these goes back to the Bao
+						Tip: Using the "Buy" button will take you to exchanges via the Quic
+						affiliate links. 100% of the revenue from these goes back to the Quic
 						treasury which Quic holders own. <br />
 						Using these links grows your bags!
 					</StyledSubtitle>
