@@ -330,7 +330,24 @@ export const supportedPools = [
 		refUrl:
 			'',
 	},
+	{
+		pid: 2,
+		lpAddresses: {
+			4: '0x0d1e5112b7bf0595837f6e19a8233e8b918ef3aa'
+		},
+		tokenAddresses: {
+			4: '0x01be23585060835e02b77ef475b0cc51aa1e0709'
+		},
+		tokenDecimals: 18,
+		name: 'Chainlink / ETH',
+		symbol: 'LINK-ETH UNIV2',
+		tokenSymbol: 'LINK',
+		icon: '/sandwich.png',
+		refUrl:
+			'',
+	},
 	
+	0x01be23585060835e02b77ef475b0cc51aa1e0709
 ]
 export const baoPools =[
 	{
