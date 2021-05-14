@@ -346,6 +346,23 @@ export const supportedPools = [
 		refUrl:
 			'',
 	},
+	{
+		pid: 3,
+		lpAddresses: {
+			1: '0x47a4110693d35ba31856e00ca7c8cf92ec1d3072',
+		},
+		tokenAddresses: {
+			1: '0xf0D7EE27DaC89D849D262ec175c553E801572Ab4',
+		},
+		tokenDecimals: 18,
+		name: 'QUIC PARTYv2',
+		symbol: 'QUIC-ETH SLP',
+		tokenSymbol: 'QUIC',
+		poolType: 'sushi',
+		icon: '/quic-logo.png',
+		refUrl:
+			'',
+	}
 	
 ]
 export const baoPools =[

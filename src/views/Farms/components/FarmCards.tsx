@@ -74,7 +74,7 @@ const FarmCards: React.FC = () => {
 		<Tabs>
 			<TabList>
 				<Tab>Uni-V2 Pools</Tab>
-				<Tab>Balancer Pools</Tab>
+				<Tab>Sushi Pools</Tab>
 				<Tab>Archived Pools</Tab>
 			</TabList>
 
